@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <style>
+        .img-list{
+            margin-top: 25px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <img id="img" class="img-fluid" src="img/1.jpg" alt="Photo"/>
+
+        <div class="row img-list">
+
+            <div class="col-md-3">
+                <img id="img1" class="img-fluid" src="img/1.jpg" alt="Photo"/>
+            </div>
+
+            <div class="col-md-3">
+                <img id="img2" class="img-fluid" src="img/2.jpg" alt="Photo"/>
+            </div>
+
+            <div class="col-md-3">
+                <img id="img3" class="img-fluid" src="img/3.jpg" alt="Photo"/>
+            </div>
+
+            <div class="col-md-3">
+                <img id="img4" class="img-fluid" src="img/4.jpg" alt="Photo"/>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script>
+
+        $('#img1').click(function () {
+            var img1 = $(this).attr('src');
+            $('#img').attr('src', img1);
+        })
+
+        $('#img2').click(function () {
+            var img2 = $(this).attr('src');
+            $('#img').attr('src', img2);
+        })
+        $('#img3').click(function () {
+            var img3 = $(this).attr('src');
+            $('#img').attr('src', img3);
+        })
+        $('#img4').click(function () {
+            var img4 = $(this).attr('src');
+            $('#img').attr('src', img4);
+        })
+    </script>
+
+</body>
+</html>

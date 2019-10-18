@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+
+        <tr>
+            <td>First Name:</td>
+            <td>
+                <input id="firstName" type="text" name="firstName"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Last Name:</td>
+            <td>
+                <input id="lastName" type="text" name="lastName"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Full Name:</td>
+            <td>
+                <h2 id="fullName"></h2>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input id="submit" type="submit" name="submit" value="submit"/>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+
+    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+    <table width="500px" border="1" style="border-collapse: collapse">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Full Name</th>
+        </tr>
+
+        <tr>
+            <td id="fullName1">First Name</td>
+            <td id="fullName2">Last Name</td>
+            <td id="fullName3">Full Name</td>
+        </tr>
+    </table>
+
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+
+        $("#submit").click(function () {
+            var firstName = $("#firstName").val();
+            var lastName  = $("#lastName").val();
+            var fullName  = firstName +" "+ lastName;
+            $("#fullName").html(fullName);
+        });
+
+//        ------------------------------------------------------------------------
+
+        $("#firstName").keyup(function () {
+            var firstName = $("#firstName").val();
+            $("#fullName1").html(firstName);
+        });
+
+        $("#lastName").keyup(function () {
+            $("#fullName2").html($("#lastName").val())
+        });
+
+        $("#lastName").blur(function () {
+            var firstName = $("#firstName").val();
+            var lastName  = $("#lastName").val();
+            var fullName  = firstName +" "+ lastName;
+            $("#fullName3").html(fullName);
+        });
+    </script>
+</body>
+</html>

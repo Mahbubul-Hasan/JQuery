@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <form action="" method="post" id="registrationForm">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <td>
+                    <input class="name" type="text" name="name"/>
+                </td>
+                <td>
+                    <span class="nameErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td>
+                    <input class="name" type="text" name="name"/>
+                </td>
+                <td>
+                    <span class="nameErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>
+                    <input id="email" type="email" name="email"/>
+                </td>
+                <td>
+                    <span id="emailErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>
+                    <input id="phoneNumber" type="text" name="phoneNumber"/>
+                </td>
+                <td>
+                    <span id="phoneNumberErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>
+                    <input id="password" type="password" name="password"/>
+                </td>
+                <td>
+                    <input id="showHide" type="checkbox" name="showHide">Show or Hide Password.
+                    <span id="passwordErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Confirm Password</th>
+                <td>
+                    <input id="confirmPassword" type="password" name="confirmPassword"/>
+                </td>
+                <td>
+                    <span id="confirmPasswordErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" value="male"/>Male
+                    <input type="radio" name="gender" value="female"/>Female
+                </td>
+                <td>
+                    <span id="genderErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>District Name</th>
+                <td>
+                    <select id="districtName" name="districtName">
+                        <option value=" ">Select District Name</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Jessore">Jessore</option>
+                        <option value="Rajsashi">Rajsashi</option>
+                    </select>
+                </td>
+                <td>
+                    <span id="districtNameErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td>
+                    <input id="website" type="text" name="website">
+                </td>
+                <td>
+                    <span id="websiteErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input id="termsCondition" type="checkbox" name="termsCondition" value="1">I agree with all terms and condition.
+                </td>
+                <td>
+                    <span id="termsConditionErrorMessage"></span>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input id="submit" type="submit" name="submit">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

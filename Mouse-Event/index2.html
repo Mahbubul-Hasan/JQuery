@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="width: 300px; height: 500px; border: 1px solid; overflow-y: scroll">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, animi commodi delectus hic illo maxime odio provident quia similique voluptates. Alias amet et eveniet laborum natus odio omnis quis quos?
+    </div>
+    <p style="color: red"></p>
+
+    <script src="js/jquery-3.3.1.js"> </script>
+    <script>
+        var firstScrollPosition = 0;
+        $("div").scroll(function () {
+           var currentScrollPosition = $(this).scrollTop();
+           if (currentScrollPosition > firstScrollPosition)
+           {
+               $("p").text("Scrolling Down");
+           } else
+           {
+               $("p").text("Scrolling Up");
+           }
+
+           firstScrollPosition = currentScrollPosition;
+        });
+    </script>
+</body>
+</html>
